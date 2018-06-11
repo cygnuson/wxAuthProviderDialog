@@ -15,21 +15,57 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Source.cpp">
+    <ClCompile Include="wxAuthProvidorDialogBase.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="MyButtonFrame.cpp">
+    <ClCompile Include="TestApp.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="MyButtonFrameMyFrame1.cpp">
+    <ClCompile Include="wxAuthProviderDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PostgreSQLRecordProvider.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MyRecordValidator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CommonPopups.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="MyButtonFrame.h">
+    <ClInclude Include="TestApp.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="MyButtonFrameMyFrame1.h">
+    <ClInclude Include="wxAuthProvidorDialogBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wxAuthProviderDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PostgreSQLRecordProvider.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MyRecordValidator.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IAuthValidator.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IRecordProvider.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IAuthProvider.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonPopups.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

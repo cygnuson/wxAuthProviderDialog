@@ -18,6 +18,27 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CommonPopups.cpp" />
+    <ClCompile Include="MyRecordValidator.cpp" />
+    <ClCompile Include="PostgreSQLRecordProvider.cpp" />
+    <ClCompile Include="Utility.cpp" />
+    <ClCompile Include="wxAuthProviderDialog.cpp" />
+    <ClCompile Include="TestApp.cpp" />
+    <ClCompile Include="wxAuthProvidorDialogBase.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CommonPopups.hpp" />
+    <ClInclude Include="IAuthProvider.hpp" />
+    <ClInclude Include="IAuthValidator.hpp" />
+    <ClInclude Include="MyRecordValidator.hpp" />
+    <ClInclude Include="PostgreSQLRecordProvider.hpp" />
+    <ClInclude Include="IRecordProvider.hpp" />
+    <ClInclude Include="Utility.hpp" />
+    <ClInclude Include="wxAuthProviderDialog.h" />
+    <ClInclude Include="TestApp.hpp" />
+    <ClInclude Include="wxAuthProvidorDialogBase.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{3c54b975-255d-46a8-b729-0a89fdf236b5}</ProjectGuid>
@@ -84,13 +105,14 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\local\wx\64\include;C:\local\wx\64\lib\mswud;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\local\libpq\64\include;C:\local\wx\64\include;C:\local\wx\64\lib\mswud;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>__WXDEBUG__;WXUSINGDLL;wxMSVC_VERSION_AUTO;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
-      <AdditionalLibraryDirectories>C:\local\wx\64\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\local\wx\64\lib;C:\local\libpq\64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <SubSystem>Windows</SubSystem>
-      <AdditionalDependencies>wxmsw31ud_core.lib;wxbase31ud.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>wxmsw31ud_core.lib;wxbase31ud.lib;libpq.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -121,15 +143,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="MyButtonFrame.cpp" />
-    <ClCompile Include="MyButtonFrameMyFrame1.cpp" />
-    <ClCompile Include="Source.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="MyButtonFrame.h" />
-    <ClInclude Include="MyButtonFrameMyFrame1.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
