@@ -132,6 +132,7 @@ void wxAuthProviderDialog::m_loginButtonOnButtonClick(
 
     m_userEntry->Clear();
     m_passEntry->Clear();
+    m_userEntry->SetFocus();
 }
 
 void wxAuthProviderDialog::m_cancelOnButtonClick(
